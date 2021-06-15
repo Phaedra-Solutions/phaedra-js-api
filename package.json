@@ -1,0 +1,37 @@
+{
+  "name": "@phaedra/js-api",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/musmanfaisal/phaedra-js-api.git",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch './**/*.ts' --exec 'tsc'",
+    "build": "tsc"
+  },
+  "keywords": [
+    "phaedra",
+    "Phaedra",
+    "phaedra js team",
+    "phaedra api"
+  ],
+  "author": {
+    "name": "Usman Faisal",
+    "url": "https://github.com/musmanfaisal"
+  },
+  "contributors": [
+    {
+      "name": "Mustafa Ahmad",
+      "url": "https://github.com/mustafasheikh1"
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/musmanfaisal/phaedra-js-api.git"
+  }
+}
