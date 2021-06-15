@@ -3,7 +3,7 @@
 Calling an api is an essential part of almost every modern javascript application. As it is a very essential part of almost every application, this library is written to facilitate and implement a standarized version of javascript api calls. This library is built on top of axios so be sure to install axios before proceeding with this
 ```npm i -s Axios```
 
-#### Table of contents
+### Table of contents
   - [Installation](#installation)
   - [Initializing the library](#initializing-the-library)
   - [Creating an end point and calling an api](#creating-an-end-point-and-calling-an-api)
@@ -22,7 +22,7 @@ Calling an api is an essential part of almost every modern javascript applicatio
 - `baseUrl`: The base url to be appended with each request.
 - `logging`: If set true, you will see logs of each request in the console. Defaults to false
 - `options`: An object to override the default configuration of authorization jwt header. If not set manually, it defaults to the following object
-~~~JSON
+~~~js
 {
     authorizationKey: "Authorization",
     auhtorizationPrefix: "Bearer ",
@@ -91,7 +91,7 @@ call(data?: object, options?: IOptions, authToken?: string): Promise<AxiosRespon
 ~~~
 The second argument will be treated as auth token if not passed as object. If you pass second argument as object, the third argument will be treated as auth token
 
-##### Get request
+#### Get request
 The get request can be simply sent by calling the `call` method
 ~~~js
 import { Endpoint } from "@phaedra/js-api";
@@ -104,7 +104,7 @@ apis.endpoints.getHello.call() // Call method will invoke the api and return an 
     .then(console.log) // Log the output to the console in case the promise is resolved
     .catch(console.warn) // Warn the error to the console in case the promise is rejected
 ~~~
-- ###### Passing data to get request
+- ##### Passing data to get request
     Some times, get request requires some data as params or query params. To pass data to get request, let's see an example of both scenarios
     <br />
 
@@ -146,7 +146,7 @@ apis.endpoints.getHello.call() // Call method will invoke the api and return an 
 
     It is visible that if we want the data to be sent as query params, we need to add the `type: "query-params"` in the options object of the request. By default, the library is going to find the key values with the same name in the url path and replace it with actual values
 
-##### Post request
+#### Post request
 Post requests are fairly simple. They usually contain data in the body. A simple invokation of post request is given as follows
 
 ~~~js
@@ -168,7 +168,7 @@ apis.loginUser({ email: "user@demo.com", password: "password" }); // POST API IN
 apis.postComment({ postId: "7t3feg349", comment: "Javascript rocks" }, "some-auth-token"); // POST API INVOKED /comments/post-comment DATA { postId: '7t3feg349', comment: 'Javascript rocks' }
 ~~~
 
-##### Put request
+#### Put request
 Put request syntax is exactly the same as [POST request](#post-request) except for a small factor that sometimes put requests contain data as request params as well. The following example shows how the data can be sent through put api in params or query params
 
 ~~~js
@@ -189,10 +189,10 @@ apis.updateProduct({ productId: "78t349gfe", name: "new product name", price: 63
 
 Additional parameters can be sent as part of the data object. Once they are appended in request, they are removed from the data object.
 
-##### Patch request
+#### Patch request
 Patch request is exactly the same as put request
 
-##### Delete request
+#### Delete request
 Delete request is essentially the same as get request. It is not recommended to send body with delete request but it can be done. If there is some data that is sent in the body and it is not appended in the path, it will be sent as body.
 
 ~~~js
