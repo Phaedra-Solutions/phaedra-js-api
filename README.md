@@ -14,7 +14,7 @@ Calling an api is an essential part of almost every modern javascript applicatio
     - [Delete request](#delete-request)
 
 #### Installation
-```npm i -s @phaedra/js-api```
+```npm i -s @phaedrajs/js-api```
 
 #### Initializing the library
 
@@ -36,7 +36,7 @@ Calling an api is an essential part of almost every modern javascript applicatio
 ~~~
 
 ~~~js
-import { BaseApis } from "@phaedra/js-api";
+import { BaseApis } from "@phaedrajs/js-api";
 
 /**
  *
@@ -72,7 +72,7 @@ Endpoints will be an instance of the `Endpoint` Class. The constructor takes thr
 - `isGuarded: boolean` if set true, an authorization token will be passed to the headers object as explained in the above section. If set to false, no token will be passed and the headers object will not contain any authorization header
 
 ~~~js
-import { Endpoint } from "@phaedra/js-api";
+import { Endpoint } from "@phaedrajs/js-api";
 
 const endpoints = {
     getHello: new Endpoint("/hello", "GET", false),
@@ -94,7 +94,7 @@ The second argument will be treated as auth token if not passed as object. If yo
 #### Get request
 The get request can be simply sent by calling the `call` method
 ~~~js
-import { Endpoint } from "@phaedra/js-api";
+import { Endpoint } from "@phaedrajs/js-api";
 
 const endpoints = {
     getHello: new Endpoint("/hello", "GET", false)
@@ -126,7 +126,7 @@ apis.endpoints.getHello.call() // Call method will invoke the api and return an 
     <br/>
 
     ~~~js
-    import { Endpoint, BaseApis } from "@phaedra/js-api";
+    import { Endpoint, BaseApis } from "@phaedrajs/js-api";
 
     BaseApis.init("https://some-magazine-server.com/api", process.env.REACT_APP_ENV === 'development');
 
@@ -150,7 +150,7 @@ apis.endpoints.getHello.call() // Call method will invoke the api and return an 
 Post requests are fairly simple. They usually contain data in the body. A simple invokation of post request is given as follows
 
 ~~~js
-import { Endpoint, BaseApis } from "@phaedra/js-api";
+import { Endpoint, BaseApis } from "@phaedrajs/js-api";
 
 BaseApis.init("https://some-social-media-server.com/api", process.env.REACT_APP_ENV === 'development');
 
