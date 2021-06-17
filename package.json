@@ -1,6 +1,6 @@
 {
   "name": "@phaedrajs/js-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "homepage": "https://github.com/musmanfaisal/phaedra-js-api.git",
   "main": "./dist/index.js",

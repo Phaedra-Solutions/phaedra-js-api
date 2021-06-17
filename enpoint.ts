@@ -15,9 +15,9 @@ export class Endpoint extends BaseApis implements IEndPoint {
 
     public call: ICallMethod = function (data?: object, additionalData?: RequestData.IOptions | string, authToken?: string) {
         return typeof additionalData === "string" ?
-            this._call(data, undefined, additionalData)
+            this._call(data || {}, undefined, additionalData)
             :
-            this._call(data, additionalData, authToken);
+            this._call(data || {}, additionalData, authToken);
     }
 
     private _call(data: object = {}, options?: RequestData.IOptions, authToken?: string) {

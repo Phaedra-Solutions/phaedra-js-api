@@ -23,9 +23,9 @@ var Endpoint = /** @class */ (function (_super) {
         var _this = _super.call(this) || this;
         _this.call = function (data, additionalData, authToken) {
             return typeof additionalData === "string" ?
-                this._call(data, undefined, additionalData)
+                this._call(data || {}, undefined, additionalData)
                 :
-                    this._call(data, additionalData, authToken);
+                    this._call(data || {}, additionalData, authToken);
         };
         _this.path = path;
         _this.type = type;
