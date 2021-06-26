@@ -1,3 +1,3 @@
-export * from "./enpoint";
-export * from "./base-apis";
-//# sourceMappingURL=index.d.ts.map
+import { Endpoint } from "./enpoint";
+import { BaseApis } from "./base-apis";
+export { Endpoint, BaseApis };

@@ -20,7 +20,7 @@ export namespace RequestData {
         headers?: object;
     }
 }
-interface ICallMethod {
+export interface ICallMethod {
     (data: object, authToken?: string): Promise<AxiosResponse>;
     (data: object, options?: RequestData.IOptions, authToken?: string): Promise<AxiosResponse>;
 }

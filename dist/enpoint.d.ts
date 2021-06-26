@@ -9,4 +9,3 @@ export declare class Endpoint extends BaseApis implements IEndPoint {
     private _call;
     private appendDataToPath;
 }
-//# sourceMappingURL=enpoint.d.ts.map

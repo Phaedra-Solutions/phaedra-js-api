@@ -131,4 +131,3 @@ var BaseApis = /** @class */ (function () {
     return BaseApis;
 }());
 exports.BaseApis = BaseApis;
-//# sourceMappingURL=base-apis.js.map

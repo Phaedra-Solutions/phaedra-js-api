@@ -10,4 +10,3 @@ export declare class BaseApis {
     protected patch(route: string, data: object, authToken?: string, type?: patchTypes, headers?: object): Promise<AxiosResponse>;
     protected delete(route: string, data?: object, authToken?: string, type?: deleteTypes, headers?: object): Promise<AxiosResponse>;
 }
-//# sourceMappingURL=base-apis.d.ts.map

@@ -1,2 +1,7 @@
-export * from "./enpoint";
-export * from "./base-apis";
+import { Endpoint } from "./enpoint";
+import { BaseApis } from "./base-apis";
+
+export {
+    Endpoint,
+    BaseApis
+}

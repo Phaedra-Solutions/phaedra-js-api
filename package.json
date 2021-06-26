@@ -1,6 +1,6 @@
 {
   "name": "@phaedrajs/js-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple library built on top of axios to facilitate and centerlizing the api calls in any js project",
   "homepage": "https://github.com/musmanfaisal/phaedra-js-api.git",
   "main": "./dist/index.js",
