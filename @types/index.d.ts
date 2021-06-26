@@ -22,7 +22,7 @@ export namespace RequestData {
 }
 interface ICallMethod {
     (data: object, authToken?: string): Promise<AxiosResponse>;
-    (data: object, options?: IOptions, authToken?: string): Promise<AxiosResponse>;
+    (data: object, options?: RequestData.IOptions, authToken?: string): Promise<AxiosResponse>;
 }
 export interface IEndPoint {
     call: ICallMethod

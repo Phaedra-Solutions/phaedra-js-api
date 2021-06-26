@@ -1,13 +1,14 @@
 {
   "name": "@phaedrajs/js-api",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "A simple library built on top of axios to facilitate and centerlizing the api calls in any js project",
   "homepage": "https://github.com/musmanfaisal/phaedra-js-api.git",
   "main": "./dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --watch './**/*.ts' --exec 'tsc'",
-    "build": "tsc"
+    "build": "rm -rf dist && tsc"
   },
   "keywords": [
     "phaedra",

@@ -95,3 +95,4 @@ var Endpoint = /** @class */ (function (_super) {
     return Endpoint;
 }(base_apis_1.BaseApis));
 exports.Endpoint = Endpoint;
+//# sourceMappingURL=enpoint.js.map
